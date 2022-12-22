@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>	
+		// 왜 간단한 방법 생각 안나고 복잡-하게 생각나지..!
+			function solution(a, b, c){
+				let answer="YES", max;
+
+				let testArray = [];
+				testArray.push(a, b, c);
+				testArray = testArray.sort((x, y) => x - y);
+
+				let maxNum = testArray[testArray.length - 1];
+				let firstNum = testArray[0];
+				let secondNum = testArray[1];
+				
+				if ( firstNum + secondNum < maxNum ){
+					answer = "no"
+				} else {
+					answer = "YES"
+				}
+
+				return answer;
+			}
+
+			console.log(solution(13, 43, 17));
+        </script>
+    </body>
+</html>
