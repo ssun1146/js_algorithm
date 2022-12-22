@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                let answer;
+
+                let testArray = [];
+                testArray.push(a, b, c)
+                // console.log(testArray)
+                answer = Math.min.apply(null, testArray);
+                return answer;
+            }
+
+            console.log(solution(6, 3, 8));
+        </script>
+    </body>
+</html>
