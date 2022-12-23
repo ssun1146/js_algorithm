@@ -8,7 +8,13 @@
 		// 주어진 숫자중 가장 작은 수 구하기
 			function solution(arr){
 				let answer;
-				answer = Math.min(...arr);
+                // 배열을 넘길때는 Spread Operator가 있어야함..!
+                // ...arr :: arr[0], arr[1], arr[2]를 검사하는 형식임..!
+				answer = Math.min(...arr);  
+
+                // 또는 이런 방법있음!
+                // null 의 위치에는 this 역할을 하는 자리임. 필요 없으면 안넣어도 됨
+                answer = Math.min.apply(null, arr);  
 				return answer;
 			}
 
