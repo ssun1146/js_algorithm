@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>	
+			// forEach, map, filter, reduce ㅎㅎ
+			// function filter(predicate, thisArg){
+			// 	let list = [];
+			// 	for (let i = 0; i < a.length; i++){
+			// 		if (predicate(a[i], i)) list.push(a[i]);
+			// 	}
+			// 	return list; 
+			// }
+
+			// filter:: 배열을 돌면서, 새로운 배열을 만들어냄..!
+			// 조건에 맞는 배열의 값만 새로운 배열로 만들어냄
+			a = [10, 11, 12, 13, 14, 15];
+			let answer = a.filter(function(v, i){
+				return v%2 == 0; // 결과가 true인 값만 출력함.
+			}, [1, 2]);
+			console.log(answer);
+
+        </script>
+    </body>
+</html>

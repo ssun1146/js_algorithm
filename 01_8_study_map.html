@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>	
+			// forEach, map, filter, reduce ㅎㅎ
+			// function map(predicate, thisArg){
+			// 	let list = [];
+			// 	for (let i = 0; i < a.length; i++){
+			// 		list.push(predicate(a[i], i));
+			// 	}
+			// 	return list; 
+			// }
+
+			// map:: 배열을 돌면서, 새로운 배열을 만들어냄..!
+			// 대신, 새로운 배열과 동일한 길이를 만들어냄. <<  쒸익
+			a = [10, 11, 12, 13, 14, 15];
+			let answer = a.map(function(v, i){
+				return v*v;
+				// if (v%2 == 0) return v; // 해도, 동일한 길이가 결과로 출력됨. (홀수는 undefined로 출력)
+			}, [1, 2]);
+			console.log(answer);
+
+        </script>
+    </body>
+</html>
