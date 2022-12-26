@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>	
+		function solution(s){
+			let answer;
+			let testArray = [];
+			for (let x of s){
+				x = x.toUpperCase();
+				testArray.push(x)
+				answer = testArray.join('');
+			}
+
+			return answer;
+		}
+
+		let str="ItisTimeToStudy";
+		console.log(solution(str));
+        </script>
+    </body>
+</html>
