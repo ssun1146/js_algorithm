@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>	
+            // 9명의 총 합을 구하고, 두명을 임시로 구한 후, 구한 값의 합 = 100 일 경우 2명이 가짜
+
+            function solution(count, arr){
+				let answer = arr;
+                let sum = arr.reduce((a, b) => a+b, 0); // 여기서 0은 초기화값.
+                for (let i = 0; i < arr.length - 1; i++){
+                    for (let j = i+1; j < arr.length; j++){
+                        // console.log(arr[i], arr[j]);
+                        if ( (sum - (arr[i] + arr[j])) == 100 ){
+                            // answer.push[i, j];
+                            arr.splice(j, 1);   // 배열에서 지울 때..? 뒤쪽 배열을 먼저 삭제 한 후, 앞쪽 삭제..
+                            arr.splice(i, 1);   // 안그러면 앞쪽 배열 삭제된게 뒤에 영향 받음.ㅠ
+                        }
+                    }
+                }
+
+                return answer;
+			}
+
+			let arr=[20, 7, 23, 19, 10, 15, 25, 8, 13];
+            console.log(solution(7, arr));
+        </script>
+    </body>
+</html>
