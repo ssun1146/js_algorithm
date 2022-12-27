@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>	
+        // 이중for문아닌감... 문제못풀ㅠ
+		function solution(s){
+			let answer = '';
+            for (i=0;i<s.length;i++){
+                let txt = s[i];
+                for (j = 0; j < s.length; j++){
+                    if (txt == s[j]){
+                        s.indexof(s[j],0);
+                    }
+                    console.log(txt == s[j])
+                }
+            }
+
+            return answer;
+		}
+		
+		console.log(solution("ksekkset"));
+        </script>
+    </body>
+</html>

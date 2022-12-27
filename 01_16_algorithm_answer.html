@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>	
+
+		// 배열로 넣을 때는 .push 하고.. 문자열하나로 합칠때는 + 쓰라고!(몽총)
+		function solution(s){
+			let answer = '';
+			// console.log(s.indexOf('k', 1));
+			for ( let i = 0; i < s.length; i++ ){
+				if ( i == s.indexOf(s[i]) ) answer+=s[i];
+			}
+            
+            return answer;
+		}
+		
+		console.log(solution("ksekkset"));
+        </script>
+    </body>
+</html>
